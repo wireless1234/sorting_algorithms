@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "sort.h"
 /**
  * pivot_sort - quick sort and return pivot
@@ -11,7 +12,6 @@ int pivot_sort(int *array, int start, int end, size_t size)
 {
 	int j, hold;
 	int i = start - 1;
-	int swapped = 0;
 
 	for (j = start; j < end; j++)
 	{
@@ -22,7 +22,6 @@ int pivot_sort(int *array, int start, int end, size_t size)
 			array[i] = array[j];
 			array[j] = hold;
 			print_array(array, size);
-			swapped = 1;
 		}
 	}
 	hold = array[i + 1];
