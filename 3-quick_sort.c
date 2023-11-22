@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "sort.h"
 /**
  * pivot_sort - quick sort and return pivot
